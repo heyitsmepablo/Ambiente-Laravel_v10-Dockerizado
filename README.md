@@ -28,36 +28,36 @@ V3
 
 ****1.1**** Antes de tudo, é necessario que você tenha o docker instalado na sua maquinha, segue os comandos em ordem para instalar
 
-    ```bash
+```bash
 
-    sudo apt update
+sudo apt update
 
-    sudo apt install apt-transport-https ca-certificates curl software-properties-common
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 
-    sudo apt install docker-ce
+sudo apt install docker-ce
 
-    ```
+```
 **1.2** Para verificar se foi instalado com sucesso
 
-    ```bash
+```bash
 
-    sudo systemctl status docker
+sudo systemctl status docker
 
-    ```
+```
 
 se no output do comando acima contem :
 
-    ```bash
+```bash
 
-    ● docker.service - Docker Application Container Engine
-        Loaded: loaded ...
-        Active: active ...
+● docker.service - Docker Application Container Engine
+    Loaded: loaded ...
+    Active: active ...
 
-    ```
+```
 
 então foi instalado com exito
 
@@ -65,27 +65,27 @@ então foi instalado com exito
 
 **1.3** Adicione seu usuario atual no grupo docker
 
-    ```bash
+```bash
 
-    sudo usermod -aG docker ${USER}
+sudo usermod -aG docker ${USER}
 
-    ```
+```
 
 **1.4** Para aplicar o novo mebro do grupo execute o seguinte comando
 
-    ```bash
+```bash
 
-    su - ${USER}
+su - ${USER}
 
-    ```
+```
 
 **1.5** Confirme que seu usuario já está no grupo docker, ao executar o seguinte comando, no seu output procure por "docker"
 
-    ```bash
+```bash
 
-    groups
+groups
 
-    ```
+```
 
 ao identificar, então seu usuario ja pode executar o comando **docker** diratamente 
 
