@@ -93,51 +93,51 @@ ao identificar, então seu usuario ja pode executar o comando **docker** diratam
 
 **2.1** Clone o Repositorio:
 
-    ```bash
+```bash
 
-    git clone git@github.com:De-v-0ps/redirect.git 
+git clone git@github.com:De-v-0ps/redirect.git 
 
-    ```
+```
 **2.2** Crie o .env a partir do .env.example
 
-    ```bash
+```bash
 
-    cp .env.example .env 
+cp .env.example .env 
 
-    ```
+```
 
 **2.3** Vá no .env e insira o seu USER linux da sua maquina (linha 64)
 
-    ```bash
+```bash
 
-    USER = NOME DO SEU USUARIO LINUX AQUI
+USER = NOME DO SEU USUARIO LINUX AQUI
 
-    ```
+```
 **2.4** Execute o ambiente
 
-    ```bash
+```bash
 
-    docker compose up -d 
+docker compose up -d 
 
-    #ou  
+#ou  
 
-    docker compose up
+docker compose up
 
-    ```
+```
     
 **Aplicação disponivel em http://localhost:80**
 
 
 - Descontinuado na V3
 
-    ~**2.5** Com os containers criados entre no container app executando o comando
+    ~**2.5** Com os containers criados entre no container app executando o comando~ 
 
     ```bash
 
     docker compose exec app bash
 
     ```
-    **2.6**  Dentro do conatiner execute o Vite com o seguinte comando 
+    ~**2.6**  Dentro do conatiner execute o Vite com o seguinte comando~
 
     (o terminal que executa esse comando tem que ficar aberto para aplicação ficar disponivel)
 
@@ -146,7 +146,6 @@ ao identificar, então seu usuario ja pode executar o comando **docker** diratam
     npm run dev
 
     ```
-    ~ 
 
 
 
